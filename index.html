@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Examples for creative website header animations using Canvas and JavaScript" />
+        <meta name="keywords" content="header, canvas, animated, creative, inspiration, javascript" />
+        <meta charset="utf-8">
+        <link rel="icon" href="img/favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <title>Esther Mogaka Portfolio</title>
+      </head>
+      <body id="pageTop">
+        <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top" >
+          <button id="bars"class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul>
+            <li>
+              <a class="nav js-scroll-trigger" href="#aboutMe">About Me</a>
+            </li>
+            <li>
+              <a class="nav js-scroll-trigger" href="#skill">Skills</a>
+            </li>
+            <li>
+              <a class="nav js-scroll-trigger" href="#projects">Projects</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- My name and links to social media-->
+        <header id="header" class="clearfix">
+          <canvas id="canvas"></canvas>
+          <section id="about" class="me">
+            <h1 class="main"></h1>
+            
+            <figcaption class="main"></figcaption>
+          </section>
+        </header>
+        <!-- About Me -->
+        <section class="clearfix">
+    
+          <section id="aboutMe" class="aboutMe">
+            <h2>About Me</h2>
+            <section class="photo">
+              <img id="me" src="img/portfolio.jpg" alt="Photo of me">
+              <section class="bio">
+               <p> Skilled software developer and programmer with knowledge of NodeJS, android development and web server programming and React.
+                  I am passionate about software development and coding and I am looking for an opportunity to apply my coding and analytical skills in your company. Committed to maintaining cutting edge technical skills and latest as well as up-to -date industry .</p>
+              </section>
+    
+              <section class="leader clear">
+                <p>
+              </section>
+    
+            </section>
+            <h2>Skills</h2>
+          </section>
+          <section id="skill" class="skills clearfix">
+            <section class="column">
+              <figure>
+                <i id="html" class="fab fa-html5"></i>
+                <h3>HTML</h3>
+              </figure>
+              <figure>
+                <img id="Java" src="img/java.png">
+                <h3>Java</h3>
+              </figure>
+            </section>
+            <section class="column">
+              <figure>
+                <i id="css" class="fab fa-css3-alt"></i>
+                <h3>CSS</h3>
+              </figure>
+              <figure>
+                <img id ='React' src="img/react1.png">
+                <h3>React</h3>
+              </figure>
+            </section>
+            <section class="column">
+              <figure>
+                <i id="javaScript" class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+              </figure>
+              <figure>
+                <img id ='Android dev' src="img/android.png">
+                <h3>Android development</h3>
+              </figure>
+            </section>
+          </section>
+        </section>
+        <!-- Projects worked in RC-->
+        <section id="projects" class="projects clearfix">
+    
+          <h2>Projects</h2>
+    
+          <a href="https://github.com/enyarangi/GraduateProject">
+            <figure>
+              <img src="img/dataloger.PNG" alt="screen shot of my  project">
+              <button type="button" class="btn btn-primary">DataLoggerApp</button>
+            </figure>
+          </a>
+    
+          <figure>
+            <a href="https://github.com/enyarangi/kwicproject/">
+              <img src="img/kwic.png" alt="screen shot of my kwic project">
+              <button type="button" class="btn btn-primary">Web Search Engine</button>
+            </a>
+          </figure>
+          <figure>
+            <a href="https://esthern-wsp20-ef0c6.firebaseapp.com/">
+              <img src="img/online store.png" alt="screen shot of my Online Store project">
+              <button type="button" class="btn btn-primary">Online Store Website</button>
+            </a>
+          </figure>
+          <figure>
+            <a href="https://github.com/enyarangi/mobileappproject">
+              <img src="img/online app.PNG" alt="screen shot of my Online Store App">
+              <button type="button" class="btn btn-primary">Android App</button>
+            </a>
+            
+          </figure>
+          
+    </section>
+    <footer class="clearfix">
+      <section class="links">
+        <p class="display">Follow or reach out to me through these channels!</p>
+        <p class="hide">Follow me!</p>
+        <p>esthernyarangi03@gmail.com</p>
+        <a href="https://github.com/enyarangi"><i id="git" class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/esther-mogaka-3185721a3/"><i id="linkedIn" class="fab fa-linkedin"></i></a> 
+      </section>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="public/jQuery.easing.js"></script>
+    <script src="public/jQuery.easing.min.js"></script>
+    <script src="js/grayscale.min.js"></script>
+    <script src="js/rAF.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/grayscale.js"></script>
+  </body>
+</html>
+
+    
+    
